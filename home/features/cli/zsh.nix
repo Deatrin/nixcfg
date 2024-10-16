@@ -20,9 +20,6 @@ with lib; let
           ltree = "eza --tree --level=2 --icons --git";
           clean = "clear";
         };
-        sessionVariables = {
-          NIX_LOG = info;
-        };
         profileExtra = ''
           if test (tty) "/dev/tty1"
             exec Hyprland &> /dev/null
