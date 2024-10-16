@@ -1,6 +1,11 @@
 # Common configuration for all hosts
 
-{ lib, inputs, outputs, ... }: {
+{ lib,
+  inputs, 
+  outputs, 
+  ... 
+}: {
+  imports = [ ./users ];
   nixpkgs = {
     # You can add overlays here
     overlays = [
