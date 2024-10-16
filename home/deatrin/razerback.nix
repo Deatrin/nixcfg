@@ -8,6 +8,7 @@
     features = {
       cli = {
         zsh.enable = true;
+        fzf.enable = true;
       };
     };
   }
