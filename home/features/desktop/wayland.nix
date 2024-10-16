@@ -129,8 +129,8 @@ in {
       qt6.qtwayland
       slurp
       waypipe
-      wf-recorder
-      wf-mirror
+      wl-recorder
+      wl-mirror
       wl-clipboard
       wlogout
       wtype
