@@ -9,6 +9,10 @@
     ./users
     inputs.home-manager.nixosModules.home-manager
   ];
+  home-manager = {
+    userUserPackages = true; 
+    extraSpecialArgs = { inherit inputs outputs; };
+  };
   nixpkgs = {
     # You can add overlays here
     overlays = [
