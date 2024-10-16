@@ -21,10 +21,13 @@ with lib; let
           clean = "clear";
         };
         profileExtra = ''
+
           if test (tty) "/dev/tty1"
             exec Hyprland &> /dev/null
-          end
+          fi
+        
         '';
+
         initExtra = ''
           ZSH_DISABLE_COMPFIX=true
           export EDITOR=nvim
