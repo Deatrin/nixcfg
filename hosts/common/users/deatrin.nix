@@ -7,7 +7,7 @@
   users.users.deatrin = {
     initialHashedPassword = "$y$j9T$PmGnK6mw4kLWTYfb3mZrM/$DHOTvVwJ.mxoeh.mU/nRfuu8D.DqVPrUBMdingTaRC7";
     isNormalUser = true;
-    description = "m3tam3re";
+    description = "Deatrin";
     extraGroups = [
       "wheel"
       "networkmanager"

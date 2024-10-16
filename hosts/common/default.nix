@@ -10,7 +10,7 @@
     inputs.home-manager.nixosModules.home-manager
   ];
   home-manager = {
-    userUserPackages = true; 
+    useUserPackages = true; 
     extraSpecialArgs = { inherit inputs outputs; };
   };
   nixpkgs = {
