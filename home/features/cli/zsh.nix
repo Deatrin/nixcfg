@@ -115,6 +115,6 @@ with lib; let
             file = "share/fzf-tab/fzf-tab.plugin.zsh";
           }
         ];
-      }
+      };
     };
   }
