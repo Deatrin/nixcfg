@@ -22,7 +22,6 @@ with lib; let
         };
         sessionVariables = {
           NIX_LOG = info;
-          TERMINAL = alacritty;
         };
         profileExtra = ''
           if test (tty) "/dev/tty1"
