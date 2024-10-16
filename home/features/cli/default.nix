@@ -2,6 +2,9 @@
   pkgs,
   ...
 }: {
+  imports = [
+    ./zsh.nix
+  ];
   programs.zoxide = {
     enable = true;
     enableZshIntegration = true;
