@@ -30,7 +30,7 @@ with lib; let
           #   export GPG_TTY="$TTY"
           # fi
           
-          if test (tty) "/dev/tty1"
+          if [[ $(tty) = "/dev/tty1" ]] 
             exec Hyprland &> /dev/null
           fi
           
