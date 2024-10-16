@@ -5,6 +5,7 @@
   imports = [
     ./zsh.nix
     ./fzf.nix
+    ./neofetch.nix
   ];
   programs.zoxide = {
     enable = true;
