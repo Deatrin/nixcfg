@@ -9,8 +9,10 @@ in {
   options.features.cli.fzf.enable = mkEnableOption "enable fuzzy finder";
 
   config = mkIf cfg.enable {
-    enable = true;
-    enableZshIntegration = true;
-    tmux.enableShellIntegration = true;
+    programs.fzf = {  
+      enable = true;
+      enableZshIntegration = true;
+      tmux.enableShellIntegration = true;
+    };
   };
 }
