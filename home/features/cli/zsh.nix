@@ -32,7 +32,7 @@ with lib; let
           
           if [[ $(tty) = "/dev/tty1" ]] 
           then
-            Hyprland &> /dev/null
+            exec Hyprland &> /dev/null
           fi
           
           # # SSH_AUTH_SOCK set to GPG to enable using gpgagent as the ssh agent.
