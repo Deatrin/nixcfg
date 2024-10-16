@@ -126,7 +126,7 @@ in {
     home.packages = with pkgs; [
       grim
       hyprlock
-      gt6.gtwayland
+      qt6.qtwayland
       slurp
       waypipe
       wf-recorder
