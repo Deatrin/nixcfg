@@ -20,13 +20,6 @@ with lib; let
           ltree = "eza --tree --level=2 --icons --git";
           clean = "clear";
         };
-        profileExtra = ''
-
-          if test (tty) "/dev/tty1"
-            exec Hyprland &> /dev/null
-          fi
-        
-        '';
 
         initExtra = ''
           ZSH_DISABLE_COMPFIX=true
@@ -36,7 +29,11 @@ with lib; let
           # else
           #   export GPG_TTY="$TTY"
           # fi
-
+          
+          if test (tty) "/dev/tty1"
+            exec Hyprland &> /dev/null
+          fi
+          
           # # SSH_AUTH_SOCK set to GPG to enable using gpgagent as the ssh agent.
           # export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
           # gpgconf --launch gpg-agent
