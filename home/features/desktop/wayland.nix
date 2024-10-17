@@ -240,6 +240,7 @@ in {
 
     home.packages = with pkgs; [
       grim
+      hypridle
       hyprlock
       qt6.qtwayland
       slurp

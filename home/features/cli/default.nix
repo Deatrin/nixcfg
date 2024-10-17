@@ -25,14 +25,27 @@
   programs.bat = {enable = true;};
   
   home.packages = with pkgs; [
+    brave
+    brightnessctl
+    clipman
     coreutils
+    distrobox
+    # eww
     fd
     htop
     httpie
+    hyprpaper
     jq
+    nwg-look
+    pamixer
+    pavucontrol
+    pcmanfm
     procs
+    qt5ct
     ripgrep
     tldr
+    usbutils
+    xdg-utils
     zip
   ];
 }
