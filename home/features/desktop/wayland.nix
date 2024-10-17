@@ -223,7 +223,7 @@ in {
             format = "{}°";
             tooltip = true;
             interval = 3600;
-            exec = "wttrbar --fahrenheit --mph";
+            exec = "wttrbar --fahrenheit";
             return-type = "json";
           };
           tray = {
