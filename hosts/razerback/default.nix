@@ -41,4 +41,5 @@
 
   extraServices.docker.enable = true;
   extraServices.podman.enable = false;
+  extraServices.libvirtd.enable = true;
 }
