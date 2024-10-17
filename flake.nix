@@ -19,14 +19,25 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.05";
 
+    disko = {
+      url = "github:nix-community/disko";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     dotfiles = {
       url = "github:Deatrin/dotfiles";
       flake = false;
     };
   };
 
-  outputs = { self, dotfiles, home-manager, nixpkgs, ... }@inputs:
-    let
+  outputs = {
+    self,
+    disko,
+    dotfiles,
+    home-manager,
+    nixpkgs,
+    ...
+    } @ inputs: let
       inherit (self) outputs;
       systems = [
         "aarch64-linux"
@@ -41,7 +52,10 @@
       nixosConfigurations = {
         razerback = nixpkgs.lib.nixosSystem {
           specialArgs = { inherit inputs outputs; };
-          modules = [ ./hosts/razerback ];
+          modules = [
+            ./hosts/razerback
+            inputs.disko.nixosModules.disko
+            ];
         };
       };
       homeConfigurations = {
