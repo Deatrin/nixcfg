@@ -189,6 +189,7 @@ in {
             "battery"
             "pulseaudio"
             "pulseaudio.microphone"
+            "network"
           ];
 
           "hyprland/window" = {
@@ -222,7 +223,7 @@ in {
             format = "{}°";
             tooltip = true;
             interval = 3600;
-            exec = "wttrbar --location Rosemead --fahrenheit --mph";
+            exec = "wttrbar --fahrenheit --mph";
             return-type = "json";
           };
           tray = {
