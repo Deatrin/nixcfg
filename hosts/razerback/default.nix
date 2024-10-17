@@ -39,5 +39,6 @@
 {
   imports = [ ../common ./configuration.nix ];
 
-  extraServices.podman.enable = true;
+  extraServices.docker.enable = true;
+  extraServices.podman.enable = false;
 }
