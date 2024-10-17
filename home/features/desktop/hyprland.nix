@@ -130,7 +130,7 @@ in {
 
         bind = [
           "$mainMod, return, exec, alacritty"
-          "$mainMod, t, exec, kitty -e zsj -c 'neofetch; exec zsh'"
+          "$mainMod, t, exec, alacritty -e zsh -c 'neofetch; exec zsh'"
           "$mainMod, o, exec, thunar"
           "$mainMod, Escape, exec, wlogout -p layer-shell"
           "$mainMod, Space, togglefloating"
