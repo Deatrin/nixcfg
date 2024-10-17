@@ -13,6 +13,9 @@
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
 
+  fileSystems."/".device = "/dev/disk/by-label/nixos";
+  boot.initrd.luks.devices."cryptroot".device = "/dev/nvme0n1p1";
+
   # fileSystems."/" =
   #   { device = "/dev/disk/by-uuid/c8d31608-cd94-469a-8bc8-a12320d620a6";
   #     fsType = "ext4";
