@@ -30,6 +30,7 @@ with lib; let
           #   export GPG_TTY="$TTY"
           # fi
           
+          source /run/agenix/${config.home.username}-secrets
           if [[ $(tty) = "/dev/tty1" ]] 
           then
             exec Hyprland &> /dev/null
