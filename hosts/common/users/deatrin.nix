@@ -10,6 +10,7 @@
     description = "Deatrin";
     extraGroups = [
       "wheel"
+      "docker"
       "networkmanager"
       "libvirtd"
       "flatpak"
