@@ -86,8 +86,8 @@
     settings.PermitRootLogin = "no";
     allowSFTP = true;
   };
-  
-  hardware.enable.bluetooth.enable = true;
+
+  hardware.bluetooth.enable = true;
 
   programs.hyprland = {
     enable = true;
