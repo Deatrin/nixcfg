@@ -62,11 +62,11 @@
     git.enable = true;
     git = {
       lfs.enable = true;
-      userName = "Deatrin";
-      userEmail = "jennexa@gmail.com";
+      config = {
+        userName = "Deatrin";
+        userEmail = "jennexa@gmail.com";
         # signing.key = null;
         # signing.signByDefault = true;
-      config = {
         init = {
           defaultBranch = "main";
         };
