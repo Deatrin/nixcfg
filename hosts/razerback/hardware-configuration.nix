@@ -13,7 +13,7 @@
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
 
-  fileSystems."/".device = "/dev/disk/by-label/nixos";
+
   boot.initrd.luks.devices."cryptroot".device = "/dev/nvme0n1p1";
 
   # fileSystems."/" =
