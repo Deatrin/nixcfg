@@ -248,6 +248,7 @@ in {
       wl-clipboard
       wlogout
       wtype
+      wttrbar
       ydotool
     ];
   };
