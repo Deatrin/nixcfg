@@ -36,12 +36,14 @@
     httpie
     hyprpaper
     jq
+    libsForQt5.qtstyleplugins
     nwg-look
     pamixer
     pavucontrol
     pcmanfm
     procs
     qt5ct
+    qt6.qtwayland
     ripgrep
     tldr
     usbutils
