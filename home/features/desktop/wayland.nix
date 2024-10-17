@@ -186,6 +186,9 @@ in {
           modules-center = ["hyprland/window"];
           modules-right = [
             "tray"
+            "battery"
+            "pulseaudio"
+            "pulseaudio.microphone"
           ];
 
           "hyprland/window" = {
