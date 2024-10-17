@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   qt = {
     enable = true;
-    platformTheme.name = "gtk";
+    platformTheme = "gtk";
   };
   gtk = {
     enable = true;
