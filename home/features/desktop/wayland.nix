@@ -189,6 +189,7 @@ in {
             "battery"
             "pulseaudio"
             "pulseaudio.microphone"
+            "network"
           ];
 
           "hyprland/window" = {
