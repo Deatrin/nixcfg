@@ -12,6 +12,7 @@
         zsh.enable = true;
         fzf.enable = true;
         neofetch.enable = true;
+        tmux.enable = true;
       };
       desktop = {
         wayland.enable = true;

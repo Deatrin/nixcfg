@@ -6,6 +6,7 @@
     ./fzf.nix
     ./neofetch.nix
     ./ohmyposh.nix
+    ./tmux.nix
     ./zsh.nix
   ];
   programs.zoxide = {
