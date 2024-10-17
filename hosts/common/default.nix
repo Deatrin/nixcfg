@@ -61,9 +61,12 @@
   programs = {
     git.enable = true;
     git = {
+      lfs.enable = true;
       userName = "Deatrin";
       userEmail = "jennexa@gmail.com";
-      extraConfig = {
+        # signing.key = null;
+        # signing.signByDefault = true;
+      config = {
         init = {
           defaultBranch = "main";
         };
