@@ -3,9 +3,10 @@
   ...
 }: {
   imports = [
-    ./zsh.nix
     ./fzf.nix
     ./neofetch.nix
+    ./ohmyposh.nix
+    ./zsh.nix
   ];
   programs.zoxide = {
     enable = true;
