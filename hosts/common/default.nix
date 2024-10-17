@@ -58,5 +58,20 @@
       ((lib.filterAttrs (_: lib.isType "flake")) inputs);
     nixPath = [ "/etc/nix/path" ];
   };
+  programs = {
+    git.enable = true;
+    git = {
+      userName = "Deatrin";
+      userEmail = "jennexa@gmail.com";
+      extraConfig = {
+        init = {
+          defaultBranch = "main";
+        };
+        pull = {
+          rebase = true;
+        };
+      };
+    };
+  };
   users.defaultUserShell = pkgs.zsh;
 }
