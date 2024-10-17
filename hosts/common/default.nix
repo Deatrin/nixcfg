@@ -58,23 +58,5 @@
       ((lib.filterAttrs (_: lib.isType "flake")) inputs);
     nixPath = [ "/etc/nix/path" ];
   };
-  programs = {
-    git.enable = true;
-    git = {
-      lfs.enable = true;
-      config = {
-        userName = "Deatrin";
-        userEmail = "jennexa@gmail.com";
-        # signing.key = null;
-        # signing.signByDefault = true;
-        init = {
-          defaultBranch = "main";
-        };
-        pull = {
-          rebase = true;
-        };
-      };
-    };
-  };
   users.defaultUserShell = pkgs.zsh;
 }
