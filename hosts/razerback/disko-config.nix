@@ -43,7 +43,7 @@
         type = "lvm_vg";
         lvs = {
           swap = {
-            size = "66G";
+            size = "34G";
             content = {
               type = "swap";
               resumeDevice = true;
