@@ -37,7 +37,11 @@
 # networking.hostName = "nixos"; # Define your hostname.
 
 {
-  imports = [ ../common ./configuration.nix ];
+  imports = [ 
+    ../common 
+    ./configuration.nix
+    ./secrets.nix
+    ];
 
   extraServices.docker.enable = true;
   extraServices.podman.enable = false;
