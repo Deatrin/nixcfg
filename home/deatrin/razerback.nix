@@ -31,11 +31,10 @@
           }
         ];
         monitor = [
-          "DP-1,2560x1440@144,0x0,1"
-          "DP-2,2560x1440@144,2560x0,1"
+          "eDP-1,1920x1200@60,0x0,1"
         ];
         workspace = [
-          "1, monitor:DP-1, default:true"
+          "1, monitor:eDP-1, default:true"
           "2, monitor:DP-1"
           "3, monitor:DP-1"
           "4, monitor:DP-2"
