@@ -24,7 +24,6 @@
   home.packages = with pkgs; [
     alacritty
     oh-my-posh
-    neovim
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
