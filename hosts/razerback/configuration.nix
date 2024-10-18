@@ -67,6 +67,7 @@
   #  wget
   git
   nfs-utils
+  neovim
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
