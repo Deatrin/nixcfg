@@ -13,7 +13,7 @@ echo 'my-secret' > /tmp/secret.key
 ```
 
 ```shell
-sudo nix --experimental-features "nix-command flakes" run github:nix-community/disko -- --mode disko ./hosts/razerback/disk0-config.nix
+sudo nix --experimental-features "nix-command flakes" run github:nix-community/disko -- --mode disko ./hosts/razerback/disko-config.nix
 ```
 
 ```shell
