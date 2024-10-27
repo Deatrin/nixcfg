@@ -42,7 +42,7 @@
     pavucontrol
     pcmanfm
     procs
-    qt5ct
+    libsForQt5.qt5ct
     qt6.qtwayland
     ripgrep
     tldr
